@@ -87,27 +87,27 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-heading font-bold text-repair-blue">
-              РемонтПро
+            <div className="text-2xl font-heading font-bold text-luxury-gold">
+              ELITE RENOVATION
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#services" className="text-gray-600 hover:text-repair-blue transition-colors">
+              <a href="#services" className="text-gray-600 hover:text-luxury-gold transition-colors">
                 Услуги
               </a>
-              <a href="#portfolio" className="text-gray-600 hover:text-repair-blue transition-colors">
+              <a href="#portfolio" className="text-gray-600 hover:text-luxury-gold transition-colors">
                 Портфолио
               </a>
-              <a href="#prices" className="text-gray-600 hover:text-repair-blue transition-colors">
+              <a href="#prices" className="text-gray-600 hover:text-luxury-gold transition-colors">
                 Цены
               </a>
-              <a href="#reviews" className="text-gray-600 hover:text-repair-blue transition-colors">
+              <a href="#reviews" className="text-gray-600 hover:text-luxury-gold transition-colors">
                 Отзывы
               </a>
-              <a href="#contact" className="text-gray-600 hover:text-repair-blue transition-colors">
+              <a href="#contact" className="text-gray-600 hover:text-luxury-gold transition-colors">
                 Контакты
               </a>
             </div>
-            <Button className="bg-repair-blue hover:bg-repair-blue/90">
+            <Button className="bg-luxury-gold hover:bg-luxury-gold/90">
               Заказать звонок
             </Button>
           </div>
@@ -115,26 +115,26 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-repair-gray to-white">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-luxury-cream to-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-heading font-bold text-repair-dark mb-6">
-                Ремонт квартир
-                <span className="text-repair-blue"> под ключ</span>
+              <h1 className="text-5xl md:text-6xl font-heading font-bold text-luxury-midnight mb-6">
+                Элитный ремонт
+                <span className="text-luxury-gold"> премиум-класса</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 font-body">
-                Профессиональный ремонт с гарантией качества. 
-                От косметического до дизайнерского ремонта.
+              <p className="text-xl text-luxury-charcoal mb-8 font-body">
+                Эксклюзивные интерьеры с безупречным качеством исполнения. 
+                Индивидуальный подход к каждому проекту.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-repair-blue hover:bg-repair-blue/90">
+                <Button size="lg" className="bg-luxury-gold hover:bg-luxury-gold/90">
                   <Icon name="Calculator" size={20} className="mr-2" />
-                  Рассчитать стоимость
+                  Консультация дизайнера
                 </Button>
-                <Button size="lg" variant="outline" className="border-repair-blue text-repair-blue hover:bg-repair-blue hover:text-white">
+                <Button size="lg" variant="outline" className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-white">
                   <Icon name="Phone" size={20} className="mr-2" />
-                  +7 (495) 123-45-67
+                  +7 (495) 777-88-99
                 </Button>
               </div>
             </div>
@@ -154,29 +154,29 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-repair-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Shield" size={32} className="text-repair-green" />
+              <div className="w-16 h-16 bg-luxury-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Shield" size={32} className="text-luxury-accent" />
               </div>
-              <h3 className="font-heading font-bold text-lg mb-2">Гарантия 2 года</h3>
-              <p className="text-gray-600 text-sm">На все виды работ</p>
+              <h3 className="font-heading font-bold text-lg mb-2">Пожизненная гарантия</h3>
+              <p className="text-luxury-charcoal/70 text-sm">На премиум материалы</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-repair-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Clock" size={32} className="text-repair-blue" />
+              <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Clock" size={32} className="text-luxury-gold" />
               </div>
               <h3 className="font-heading font-bold text-lg mb-2">Точные сроки</h3>
               <p className="text-gray-600 text-sm">Договор с фиксированными датами</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-repair-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Users" size={32} className="text-repair-red" />
+              <div className="w-16 h-16 bg-luxury-charcoal/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="Users" size={32} className="text-luxury-charcoal" />
               </div>
               <h3 className="font-heading font-bold text-lg mb-2">Опыт 10+ лет</h3>
               <p className="text-gray-600 text-sm">Более 500 завершенных проектов</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-repair-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="CreditCard" size={32} className="text-repair-green" />
+              <div className="w-16 h-16 bg-luxury-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Icon name="CreditCard" size={32} className="text-luxury-accent" />
               </div>
               <h3 className="font-heading font-bold text-lg mb-2">Рассрочка 0%</h3>
               <p className="text-gray-600 text-sm">Оплата по этапам работ</p>
@@ -186,10 +186,10 @@ const Index = () => {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-16 bg-repair-gray">
+      <section id="services" className="py-16 bg-luxury-cream">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-bold text-repair-dark mb-4">
+            <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
               Наши услуги
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -200,14 +200,14 @@ const Index = () => {
             {services.map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-repair-blue/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name={service.icon} size={24} className="text-repair-blue" />
+                  <div className="w-12 h-12 bg-luxury-gold/10 rounded-lg flex items-center justify-center mb-4">
+                    <Icon name={service.icon} size={24} className="text-luxury-gold" />
                   </div>
                   <CardTitle className="font-heading">{service.title}</CardTitle>
                   <CardDescription>{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold text-repair-blue mb-4">
+                  <div className="text-2xl font-bold text-luxury-gold mb-4">
                     {service.price}
                   </div>
                   <Button className="w-full" variant="outline">
@@ -224,7 +224,7 @@ const Index = () => {
       <section id="portfolio" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-bold text-repair-dark mb-4">
+            <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
               Наши работы
             </h2>
             <p className="text-xl text-gray-600">
@@ -259,10 +259,10 @@ const Index = () => {
       </section>
 
       {/* Prices */}
-      <section id="prices" className="py-16 bg-repair-gray">
+      <section id="prices" className="py-16 bg-luxury-cream">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-bold text-repair-dark mb-4">
+            <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
               Цены на услуги
             </h2>
             <p className="text-xl text-gray-600">
@@ -274,26 +274,26 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="font-heading text-center">Косметический</CardTitle>
                 <div className="text-center">
-                  <span className="text-4xl font-bold text-repair-blue">2 500₽</span>
+                  <span className="text-4xl font-bold text-luxury-gold">2 500₽</span>
                   <span className="text-gray-600">/м²</span>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Покраска стен и потолков
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Поклейка обоев
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Замена напольного покрытия
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Мелкий электромонтаж
                   </li>
                 </ul>
@@ -303,41 +303,41 @@ const Index = () => {
               </CardContent>
             </Card>
             
-            <Card className="relative border-2 border-repair-blue">
+            <Card className="relative border-2 border-luxury-gold">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-repair-blue">Популярный</Badge>
+                <Badge className="bg-luxury-gold">Популярный</Badge>
               </div>
               <CardHeader>
                 <CardTitle className="font-heading text-center">Капитальный</CardTitle>
                 <div className="text-center">
-                  <span className="text-4xl font-bold text-repair-blue">8 000₽</span>
+                  <span className="text-4xl font-bold text-luxury-gold">8 000₽</span>
                   <span className="text-gray-600">/м²</span>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Все работы косметического
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Замена электропроводки
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Сантехнические работы
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Выравнивание стен
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Установка дверей и окон
                   </li>
                 </ul>
-                <Button className="w-full mt-6 bg-repair-blue hover:bg-repair-blue/90">
+                <Button className="w-full mt-6 bg-luxury-gold hover:bg-luxury-gold/90">
                   Выбрать
                 </Button>
               </CardContent>
@@ -347,30 +347,30 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="font-heading text-center">Дизайнерский</CardTitle>
                 <div className="text-center">
-                  <span className="text-4xl font-bold text-repair-blue">15 000₽</span>
+                  <span className="text-4xl font-bold text-luxury-gold">15 000₽</span>
                   <span className="text-gray-600">/м²</span>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Все работы капитального
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Дизайн-проект
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Премиум материалы
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Авторский надзор
                   </li>
                   <li className="flex items-center">
-                    <Icon name="Check" size={16} className="text-repair-green mr-2" />
+                    <Icon name="Check" size={16} className="text-luxury-accent mr-2" />
                     Декоративные элементы
                   </li>
                 </ul>
@@ -387,7 +387,7 @@ const Index = () => {
       <section id="reviews" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-bold text-repair-dark mb-4">
+            <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
               Отзывы клиентов
             </h2>
             <p className="text-xl text-gray-600">
@@ -418,10 +418,10 @@ const Index = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-repair-gray">
+      <section className="py-16 bg-luxury-cream">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-bold text-repair-dark mb-4">
+            <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
               Частые вопросы
             </h2>
             <p className="text-xl text-gray-600">
@@ -446,7 +446,7 @@ const Index = () => {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="py-16 bg-repair-dark text-white">
+      <section id="contact" className="py-16 bg-luxury-midnight text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-heading font-bold mb-4">
@@ -461,25 +461,25 @@ const Index = () => {
               <h3 className="text-2xl font-heading font-bold mb-6">Контактная информация</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Icon name="Phone" size={20} className="text-repair-blue mr-4" />
+                  <Icon name="Phone" size={20} className="text-luxury-gold mr-4" />
                   <span>+7 (495) 123-45-67</span>
                 </div>
                 <div className="flex items-center">
-                  <Icon name="Mail" size={20} className="text-repair-blue mr-4" />
+                  <Icon name="Mail" size={20} className="text-luxury-gold mr-4" />
                   <span>info@remontpro.ru</span>
                 </div>
                 <div className="flex items-center">
-                  <Icon name="MapPin" size={20} className="text-repair-blue mr-4" />
+                  <Icon name="MapPin" size={20} className="text-luxury-gold mr-4" />
                   <span>Москва, ул. Примерная, д. 123</span>
                 </div>
                 <div className="flex items-center">
-                  <Icon name="Clock" size={20} className="text-repair-blue mr-4" />
+                  <Icon name="Clock" size={20} className="text-luxury-gold mr-4" />
                   <span>Пн-Пт: 9:00-18:00, Сб-Вс: 10:00-16:00</span>
                 </div>
               </div>
             </div>
             <div>
-              <Card className="bg-white text-repair-dark">
+              <Card className="bg-white text-luxury-midnight">
                 <CardHeader>
                   <CardTitle className="font-heading">Получить консультацию</CardTitle>
                   <CardDescription>
@@ -491,7 +491,7 @@ const Index = () => {
                     <label className="block text-sm font-medium mb-2">Имя</label>
                     <input 
                       type="text" 
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-repair-blue" 
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-luxury-gold" 
                       placeholder="Ваше имя"
                     />
                   </div>
@@ -499,20 +499,20 @@ const Index = () => {
                     <label className="block text-sm font-medium mb-2">Телефон</label>
                     <input 
                       type="tel" 
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-repair-blue" 
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-luxury-gold" 
                       placeholder="+7 (___) ___-__-__"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Тип ремонта</label>
-                    <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-repair-blue">
+                    <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-luxury-gold">
                       <option>Косметический ремонт</option>
                       <option>Капитальный ремонт</option>
                       <option>Дизайнерский ремонт</option>
                       <option>Частичный ремонт</option>
                     </select>
                   </div>
-                  <Button className="w-full bg-repair-blue hover:bg-repair-blue/90">
+                  <Button className="w-full bg-luxury-gold hover:bg-luxury-gold/90">
                     <Icon name="Send" size={16} className="mr-2" />
                     Отправить заявку
                   </Button>
@@ -524,7 +524,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-repair-dark border-t border-gray-800 py-8">
+      <footer className="bg-luxury-midnight border-t border-gray-800 py-8">
         <div className="container mx-auto px-4">
           <div className="text-center text-gray-400">
             <p>&copy; 2024 РемонтПро. Все права защищены.</p>

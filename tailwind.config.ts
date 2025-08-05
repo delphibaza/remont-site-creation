@@ -23,12 +23,14 @@ export default {
 				body: ['Open Sans', 'sans-serif'],
 			},
 			colors: {
-				repair: {
-					blue: '#2563EB',
-					red: '#DC2626',
-					green: '#059669',
-					gray: '#F3F4F6',
-					dark: '#111827',
+				luxury: {
+					gold: '#D4AF37',
+					darkGold: '#B8860B',
+					charcoal: '#2C2C2C',
+					platinum: '#E5E4E2',
+					cream: '#F8F6F0',
+					midnight: '#0F0F0F',
+					accent: '#8B7355',
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
