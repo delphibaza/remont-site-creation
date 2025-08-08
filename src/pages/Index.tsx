@@ -10,25 +10,25 @@ const Index = () => {
       icon: "Hammer",
       title: "Косметический ремонт",
       description: "Покраска стен, поклейка обоев, обновление напольных покрытий",
-      price: "от 2 500 ₽/м²"
+      price: "от 20 000 ₽/м²"
     },
     {
       icon: "Wrench",
       title: "Капитальный ремонт",
       description: "Полная перепланировка с заменой коммуникаций и отделкой",
-      price: "от 8 000 ₽/м²"
+      price: "от 25 500 ₽/м²"
     },
     {
       icon: "Paintbrush",
       title: "Дизайнерский ремонт",
       description: "Эксклюзивная отделка по индивидуальному проекту",
-      price: "от 15 000 ₽/м²"
+      price: "от 31 000 ₽/м²"
     },
     {
-      icon: "HardHat",
+      icon: "Zap",
       title: "Электромонтажные работы",
       description: "Замена проводки, установка розеток и выключателей",
-      price: "от 1 200 ₽/м²"
+      price: "от 3 990 ₽/м²"
     }
   ];
 
@@ -51,14 +51,43 @@ const Index = () => {
     {
       name: "Анна Смирнова",
       rating: 5,
-      text: "Отличная работа! Ремонт выполнили в срок, качество на высоте. Особенно понравилось внимание к деталям.",
-      project: "Косметический ремонт 2-комн. кв."
+      text: "Превосходное качество работ! Ремонт выполнен точно в срок, каждая деталь продумана до мелочей. Особенно впечатлили мраморные элементы в ванной.",
+      project: "Дизайнерский ремонт 3-комн. кв.",
+      photo: "/img/be37677f-79c5-40f7-85df-faab44eca593.jpg"
     },
     {
       name: "Михаил Петров",
       rating: 5,
-      text: "Делали капитальный ремонт квартиры. Все этапы согласовывались, работы выполнены профессионально.",
-      project: "Капремонт 3-комн. кв."
+      text: "Капитальный ремонт выполнен на высшем уровне. Команда работала слаженно, все коммуникации заменены качественно. Рекомендую всем!",
+      project: "Капремонт 4-комн. кв.",
+      photo: "/img/9df6f056-9aaa-4da6-a357-cf9653e6353e.jpg"
+    },
+    {
+      name: "Елена и Сергей Ковалевы",
+      rating: 5,
+      text: "Долго выбирали компанию для ремонта нашей квартиры. Elite Renovation превзошли все ожидания! Золотые акценты в интерьере выглядят роскошно.",
+      project: "Премиум ремонт 2-комн. кв.",
+      photo: "/img/97634294-7e64-4612-a106-30cba52f3899.jpg"
+    },
+    {
+      name: "Владимир Николаевич",
+      rating: 5,
+      text: "В возрасте 65 лет решился на полный ремонт дома. Ребята сделали все идеально - от электрики до дизайна. Домашний кабинет теперь как в фильме!",
+      project: "Элитный ремонт дома",
+      photo: "/img/e42c6e8b-52b5-4bab-b5a7-9264a1461428.jpg"
+    },
+    {
+      name: "Мария Александрова",
+      rating: 5,
+      text: "Как молодой специалист, долго копила на свою первую квартиру. Elite Renovation сделали мою мечту реальностью! Каждый квадратный метр использован максимально эффективно.",
+      project: "Дизайнерский ремонт студии",
+      photo: "/img/34552321-ddf0-4612-a0b0-17b2cc5a526b.jpg"
+    },
+    {
+      name: "Андрей Соколов",
+      rating: 5,
+      text: "Ремонт офиса нашей компании. Сроки соблюдены четко, качество материалов на высоте. Сотрудники теперь работают в комфортной атмосере.",
+      project: "Ремонт офиса 200м²"
     }
   ];
 
@@ -115,14 +144,40 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-0 relative min-h-screen">
+      <section className="pt-24 pb-0 relative h-[70vh]">
         <div className="absolute inset-0">
           <img 
             src="/img/530155e0-9ac6-4a0c-9ad9-20e7d86a8f22.jpg" 
             alt="Премиальный интерьер квартиры"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+        </div>
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+          <div className="text-white max-w-2xl">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 bg-gradient-to-r from-white to-luxury-gold bg-clip-text text-transparent">
+              Идеальный ремонт квартиры
+              <br />
+              <span className="text-4xl md:text-5xl">по фиксированной цене</span>
+            </h1>
+            
+            <div className="grid md:grid-cols-3 gap-6 mt-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <h3 className="font-bold text-lg mb-2 text-luxury-gold">Фиксированная цена</h3>
+                <p className="text-sm">гарантирована по договору, без изменений</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <h3 className="font-bold text-lg mb-2 text-luxury-gold">Гарантия до 2 лет</h3>
+                <p className="text-sm">на все виды ремонтных услуг</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <h3 className="font-bold text-lg mb-2 text-luxury-gold">Сертифицированные мастера</h3>
+                <p className="text-sm">Knauf, Rehau, Tikkurila и др.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -164,7 +219,7 @@ const Index = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-16 bg-luxury-midnight text-white">
+      <section className="py-16 bg-gradient-to-br from-luxury-cream to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-heading font-bold mb-4">
@@ -174,27 +229,27 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             <div className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">7</div>
-              <div className="text-sm text-luxury-cream">лет опыта работы</div>
+              <div className="text-sm text-luxury-charcoal">лет опыта работы</div>
             </div>
             <div className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">1021</div>
-              <div className="text-sm text-luxury-cream">проектов реализовано нами</div>
+              <div className="text-sm text-luxury-charcoal">проектов реализовано нами</div>
             </div>
             <div className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">2</div>
-              <div className="text-sm text-luxury-cream">года гарантии на услуги</div>
+              <div className="text-sm text-luxury-charcoal">года гарантии на услуги</div>
             </div>
             <div className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">3 из 10</div>
-              <div className="text-sm text-luxury-cream">клиентов приходят по рекомендации</div>
+              <div className="text-sm text-luxury-charcoal">клиентов приходят по рекомендации</div>
             </div>
             <div className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">33</div>
-              <div className="text-sm text-luxury-cream">сотрудника в штате компании</div>
+              <div className="text-sm text-luxury-charcoal">сотрудника в штате компании</div>
             </div>
             <div className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">от 20</div>
-              <div className="text-sm text-luxury-cream">тыс.руб/м² стоимость ремонта</div>
+              <div className="text-sm text-luxury-charcoal">тыс.руб/м² стоимость ремонта</div>
             </div>
           </div>
         </div>
@@ -502,19 +557,32 @@ const Index = () => {
               Что говорят о нас наши клиенты
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
-              <Card key={index}>
+              <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="font-heading">{review.name}</CardTitle>
-                    <div className="flex">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
-                      ))}
+                  <div className="flex items-center gap-4 mb-4">
+                    {review.photo && (
+                      <div className="w-16 h-16 rounded-full overflow-hidden">
+                        <img 
+                          src={review.photo} 
+                          alt={review.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+                    <div className="flex-1">
+                      <CardTitle className="font-heading text-lg">{review.name}</CardTitle>
+                      <div className="flex items-center gap-2 mt-1">
+                        <div className="flex">
+                          {[...Array(review.rating)].map((_, i) => (
+                            <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <CardDescription>{review.project}</CardDescription>
+                  <CardDescription className="font-medium text-luxury-gold">{review.project}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 italic">"{review.text}"</p>
