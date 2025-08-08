@@ -115,75 +115,18 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-luxury-cream to-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-heading font-bold text-luxury-midnight mb-6">
-                Элитный ремонт
-                <span className="text-luxury-gold"> премиум-класса</span>
-              </h1>
-              <p className="text-xl text-luxury-charcoal mb-8 font-body">
-                Эксклюзивные интерьеры с безупречным качеством исполнения. 
-                Индивидуальный подход к каждому проекту.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-luxury-gold hover:bg-luxury-gold/90">
-                  <Icon name="Calculator" size={20} className="mr-2" />
-                  Консультация дизайнера
-                </Button>
-                <Button size="lg" variant="outline" className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-white">
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  +7 (495) 777-88-99
-                </Button>
-              </div>
-            </div>
-            <div className="animate-fade-in">
-              <img 
-                src="/img/ce24c7a1-49bb-447a-9c85-dcd5a5d95294.jpg" 
-                alt="Современный ремонт квартиры"
-                className="rounded-2xl shadow-2xl w-full"
-              />
-            </div>
-          </div>
+      <section className="pt-24 pb-0 relative min-h-screen">
+        <div className="absolute inset-0">
+          <img 
+            src="/img/530155e0-9ac6-4a0c-9ad9-20e7d86a8f22.jpg" 
+            alt="Премиальный интерьер квартиры"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-luxury-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Shield" size={32} className="text-luxury-accent" />
-              </div>
-              <h3 className="font-heading font-bold text-lg mb-2">Пожизненная гарантия</h3>
-              <p className="text-luxury-charcoal/70 text-sm">На премиум материалы</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Clock" size={32} className="text-luxury-gold" />
-              </div>
-              <h3 className="font-heading font-bold text-lg mb-2">Точные сроки</h3>
-              <p className="text-gray-600 text-sm">Договор с фиксированными датами</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-luxury-charcoal/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Users" size={32} className="text-luxury-charcoal" />
-              </div>
-              <h3 className="font-heading font-bold text-lg mb-2">Опыт 10+ лет</h3>
-              <p className="text-gray-600 text-sm">Более 500 завершенных проектов</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-luxury-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="CreditCard" size={32} className="text-luxury-accent" />
-              </div>
-              <h3 className="font-heading font-bold text-lg mb-2">Рассрочка 0%</h3>
-              <p className="text-gray-600 text-sm">Оплата по этапам работ</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Services */}
       <section id="services" className="py-16 bg-luxury-cream">
@@ -439,7 +382,7 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="font-heading text-center">Косметический</CardTitle>
                 <div className="text-center">
-                  <span className="text-4xl font-bold text-luxury-gold">2 500₽</span>
+                  <span className="text-4xl font-bold text-luxury-gold">20 000₽</span>
                   <span className="text-gray-600">/м²</span>
                 </div>
               </CardHeader>
@@ -475,7 +418,7 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="font-heading text-center">Капитальный</CardTitle>
                 <div className="text-center">
-                  <span className="text-4xl font-bold text-luxury-gold">8 000₽</span>
+                  <span className="text-4xl font-bold text-luxury-gold">25 500₽</span>
                   <span className="text-gray-600">/м²</span>
                 </div>
               </CardHeader>
@@ -512,7 +455,7 @@ const Index = () => {
               <CardHeader>
                 <CardTitle className="font-heading text-center">Дизайнерский</CardTitle>
                 <div className="text-center">
-                  <span className="text-4xl font-bold text-luxury-gold">15 000₽</span>
+                  <span className="text-4xl font-bold text-luxury-gold">31 000₽</span>
                   <span className="text-gray-600">/м²</span>
                 </div>
               </CardHeader>
