@@ -220,6 +220,43 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Stats */}
+      <section className="py-16 bg-luxury-midnight text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-heading font-bold mb-4">
+              Мы в цифрах
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">7</div>
+              <div className="text-sm text-luxury-cream">лет опыта работы</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">1021</div>
+              <div className="text-sm text-luxury-cream">проектов реализовано нами</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">2</div>
+              <div className="text-sm text-luxury-cream">года гарантии на услуги</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">3 из 10</div>
+              <div className="text-sm text-luxury-cream">клиентов приходят по рекомендации</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">33</div>
+              <div className="text-sm text-luxury-cream">сотрудника в штате компании</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">от 20</div>
+              <div className="text-sm text-luxury-cream">тыс.руб/м² стоимость ремонта</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio */}
       <section id="portfolio" className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -227,33 +264,161 @@ const Index = () => {
             <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
               Наши работы
             </h2>
-            <p className="text-xl text-gray-600">
-              Примеры выполненных проектов
+            <p className="text-xl text-luxury-charcoal">
+              Премиальные проекты "До" и "После"
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {portfolio.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-video overflow-hidden">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src="/img/0adae9ba-aadc-47cc-b0d9-b6299c80987e.jpg" 
+                  alt="Гостиная до и после"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Гостиная премиум-класса</CardTitle>
+                <CardDescription>Полная трансформация с мраморными элементами</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src="/img/2bd0675b-e563-43a9-b9e0-9f8fee7f8b2b.jpg" 
+                  alt="Кухня до и после"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Кухня люкс</CardTitle>
+                <CardDescription>Элитная кухня с золотой фурнитурой</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src="/img/9a32cdfc-0b41-4447-8da9-63aa6fa3ce79.jpg" 
+                  alt="Ванная до и после"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Spa-ванная</CardTitle>
+                <CardDescription>Мраморная ванная комната с золотом</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src="/img/ec8a3532-3243-4c66-865a-dd32a2fde5ef.jpg" 
+                  alt="Спальня до и после"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Мастер-спальня</CardTitle>
+                <CardDescription>Роскошная спальня с премиум-текстилем</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src="/img/5b1046f4-57bb-42fb-96d7-911a5fdd9326.jpg" 
+                  alt="Офис до и после"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Домашний офис</CardTitle>
+                <CardDescription>Элегантное рабочее пространство</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src="/img/7c8e6f55-d67f-41ce-a044-8af628f8cec7.jpg" 
+                  alt="Столовая до и после"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Столовая зона</CardTitle>
+                <CardDescription>Изысканная обеденная зона с люстрой</CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="py-16 bg-luxury-cream">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
+              Наша команда
+            </h2>
+            <p className="text-xl text-luxury-charcoal">
+              Профессионалы с многолетним опытом
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="text-center hover:shadow-xl transition-shadow duration-300">
+              <CardHeader>
+                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
                   <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    src="/img/dffb64b1-c5d4-444e-bdd0-d0dbc611a3ff.jpg" 
+                    alt="Генеральный директор"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <CardHeader>
-                  <CardTitle className="font-heading">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardHeader>
-              </Card>
-            ))}
+                <CardTitle className="font-heading">Александр Петров</CardTitle>
+                <CardDescription>Генеральный директор</CardDescription>
+                <p className="text-sm text-luxury-charcoal/70 mt-2">15 лет в элитном ремонте</p>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-xl transition-shadow duration-300">
+              <CardHeader>
+                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                  <img 
+                    src="/img/b149e8e3-548e-41c6-acf0-4db7babfdf89.jpg" 
+                    alt="Главный дизайнер"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardTitle className="font-heading">Мария Иванова</CardTitle>
+                <CardDescription>Главный дизайнер</CardDescription>
+                <p className="text-sm text-luxury-charcoal/70 mt-2">Премия "Лучший дизайн года"</p>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-xl transition-shadow duration-300">
+              <CardHeader>
+                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                  <img 
+                    src="/img/d887ab05-39d0-4f0b-a891-2326c6901c91.jpg" 
+                    alt="Прораб"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardTitle className="font-heading">Сергей Волков</CardTitle>
+                <CardDescription>Главный прораб</CardDescription>
+                <p className="text-sm text-luxury-charcoal/70 mt-2">Мастер высшего разряда</p>
+              </CardHeader>
+            </Card>
+            <Card className="text-center hover:shadow-xl transition-shadow duration-300">
+              <CardHeader>
+                <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                  <img 
+                    src="/img/21c45d7b-b98d-4251-bd9e-271b1ef470ac.jpg" 
+                    alt="Менеджер проектов"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardTitle className="font-heading">Дмитрий Козлов</CardTitle>
+                <CardDescription>Менеджер проектов</CardDescription>
+                <p className="text-sm text-luxury-charcoal/70 mt-2">Координирует все этапы</p>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </section>
