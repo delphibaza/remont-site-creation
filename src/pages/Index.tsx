@@ -153,28 +153,28 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
         </div>
-        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
-          <div className="text-white max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6 bg-gradient-to-r from-white to-luxury-gold bg-clip-text text-transparent">
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center justify-center">
+          <div className="text-white text-center max-w-6xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-heading font-bold mb-6 md:mb-8 bg-gradient-to-r from-white to-luxury-gold bg-clip-text text-transparent">
               Идеальный ремонт квартиры
               <br />
-              <span className="text-4xl md:text-5xl">по фиксированной цене</span>
+              <span className="text-2xl sm:text-3xl md:text-5xl">по фиксированной цене</span>
             </h1>
             
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <h3 className="font-bold text-lg mb-2 text-luxury-gold">Фиксированная цена</h3>
-                <p className="text-sm">гарантирована по договору, без изменений</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8 max-w-5xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+                <h3 className="font-bold text-base md:text-lg mb-2 text-luxury-gold">Фиксированная цена</h3>
+                <p className="text-xs md:text-sm">гарантирована по договору, без изменений</p>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <h3 className="font-bold text-lg mb-2 text-luxury-gold">Гарантия до 2 лет</h3>
-                <p className="text-sm">на все виды ремонтных услуг</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+                <h3 className="font-bold text-base md:text-lg mb-2 text-luxury-gold">Гарантия до 2 лет</h3>
+                <p className="text-xs md:text-sm">на все виды ремонтных услуг</p>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <h3 className="font-bold text-lg mb-2 text-luxury-gold">Сертифицированные мастера</h3>
-                <p className="text-sm">Knauf, Rehau, Tikkurila и др.</p>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+                <h3 className="font-bold text-base md:text-lg mb-2 text-luxury-gold">Сертифицированные мастера</h3>
+                <p className="text-xs md:text-sm">Knauf, Rehau, Tikkurila и др.</p>
               </div>
             </div>
           </div>
@@ -187,28 +187,28 @@ const Index = () => {
       <section id="services" className="py-16 bg-luxury-cream">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-bold text-luxury-midnight mb-4">
+            <h2 className="text-2xl md:text-4xl font-heading font-bold text-luxury-midnight mb-4">
               Наши услуги
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Выполняем все виды ремонтных работ с использованием качественных материалов
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {services.map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-luxury-gold/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name={service.icon} size={24} className="text-luxury-gold" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-luxury-gold/10 rounded-lg flex items-center justify-center mb-3 md:mb-4">
+                    <Icon name={service.icon} size={20} className="text-luxury-gold md:w-6 md:h-6" />
                   </div>
-                  <CardTitle className="font-heading">{service.title}</CardTitle>
-                  <CardDescription>{service.description}</CardDescription>
+                  <CardTitle className="font-heading text-lg md:text-xl">{service.title}</CardTitle>
+                  <CardDescription className="text-sm md:text-base">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold text-luxury-gold mb-4">
+                  <div className="text-xl md:text-2xl font-bold text-luxury-gold mb-3 md:mb-4">
                     {service.price}
                   </div>
-                  <Button className="w-full" variant="outline">
+                  <Button className="w-full text-sm md:text-base" variant="outline">
                     Подробнее
                   </Button>
                 </CardContent>
@@ -222,11 +222,11 @@ const Index = () => {
       <section className="py-16 bg-gradient-to-br from-luxury-cream to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-heading font-bold mb-4">
+            <h2 className="text-2xl md:text-4xl font-heading font-bold mb-4">
               Мы в цифрах
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8">
             <div className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-luxury-gold mb-2">7</div>
               <div className="text-sm text-luxury-charcoal">лет опыта работы</div>
@@ -561,9 +561,9 @@ const Index = () => {
             {reviews.map((review, index) => (
               <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-3 mb-4">
                     {review.photo && (
-                      <div className="w-16 h-16 rounded-full overflow-hidden">
+                      <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex-shrink-0">
                         <img 
                           src={review.photo} 
                           alt={review.name}
@@ -571,21 +571,21 @@ const Index = () => {
                         />
                       </div>
                     )}
-                    <div className="flex-1">
-                      <CardTitle className="font-heading text-lg">{review.name}</CardTitle>
+                    <div className="flex-1 min-w-0">
+                      <CardTitle className="font-heading text-base md:text-lg truncate">{review.name}</CardTitle>
                       <div className="flex items-center gap-2 mt-1">
                         <div className="flex">
                           {[...Array(review.rating)].map((_, i) => (
-                            <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                            <Icon key={i} name="Star" size={14} className="text-yellow-400 fill-current" />
                           ))}
                         </div>
                       </div>
                     </div>
                   </div>
-                  <CardDescription className="font-medium text-luxury-gold">{review.project}</CardDescription>
+                  <CardDescription className="font-medium text-luxury-gold text-sm md:text-base">{review.project}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700 italic">"{review.text}"</p>
+                  <p className="text-gray-700 italic text-sm md:text-base">"{review.text}"</p>
                 </CardContent>
               </Card>
             ))}
