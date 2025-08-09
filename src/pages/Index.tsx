@@ -162,19 +162,19 @@ const Index = () => {
             </h1>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8 max-w-5xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+              <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center border border-white/20">
                 <h3 className="font-bold text-base md:text-lg mb-2 text-luxury-gold">Фиксированная цена</h3>
-                <p className="text-xs md:text-sm">гарантирована по договору, без изменений</p>
+                <p className="text-xs md:text-sm text-white">гарантирована по договору, без изменений</p>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+              <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center border border-white/20">
                 <h3 className="font-bold text-base md:text-lg mb-2 text-luxury-gold">Гарантия до 2 лет</h3>
-                <p className="text-xs md:text-sm">на все виды ремонтных услуг</p>
+                <p className="text-xs md:text-sm text-white">на все виды ремонтных услуг</p>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center">
+              <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 md:p-6 text-center border border-white/20">
                 <h3 className="font-bold text-base md:text-lg mb-2 text-luxury-gold">Сертифицированные мастера</h3>
-                <p className="text-xs md:text-sm">Knauf, Rehau, Tikkurila и др.</p>
+                <p className="text-xs md:text-sm text-white">Knauf, Rehau, Tikkurila и др.</p>
               </div>
             </div>
           </div>
